@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="main-info">
+      <h2 class="main__title-second">Основная информация</h2>
+      <p class="main__paragraph">Sed ut&nbsp;perspiciatis, <a href="#" class="main__link">unde omnis iste</a> natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab&nbsp;illo inventore veritatis et&nbsp;quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+      <form class="form" method="post">
+        <div class="form__group">
+          <div class="form__item">
+            <input class="form__field" id="group" type="text" name="group" placeholder="Введите название">
+            <label class="form__label" for="group">Название группы</label>
+            <span class="form__line"></span>
+          </div>
+          <div class="form__item">
+            <input class="form__field" id="name" type="text" name="name" placeholder="Введите название">
+            <label class="form__label" for="name">ФИО ответственного</label>
+            <span class="form__line"></span>
+          </div>
+          <div class="form__item">
+            <input class="form__field" id="email" type="text" name="email" placeholder="Введите название">
+            <label class="form__label" for="email">Email для входа</label>
+            <span class="form__line"></span>
+          </div>
+        </div>
+        <div class="form__item form__item--text">
+          <textarea class="form__field form__field--text" id="textarea" placeholder="Введите краткое и емкое описание для рабочей группы" rows="3"></textarea>
+          <label for="textarea" class="form__label">Описание рабочей группы</label>
+        </div>
+        <div class="form__footer">
+          <button class="form-button form-button--submit" type="submit"><span class="form-button__text">Сохранить</span></button>
+          <button class="form-button form-button--cancel" type="reset"><span class="form-button__text">Отмена</span></button>
+        </div>
+      </form>
+    </section>
+    <section class="control-notification">
+      <h2 class="main__title-second">Управление уведомлениями</h2>
+      <div class="warning">
+        <div class="warning__icon">
+          <i class="material-icons material-icons__warning">warning</i>
+        </div>
+        <div class="warning__content">
+          <h3 class="warning__title">Внимание!</h3>
+          <p class="warning__paragraph">Sed ut&nbsp;perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab&nbsp;illo inventore veritatis et&nbsp;quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.</p>
+        </div>
+      </div>
+      <div class="notification-list">
+        <div class="notification-list__item">
+          <header class="notification-list__header notification-list__header--1">
+            <h3 class="notification-list__title notification-list__title--point">Telegram</h3>
+          </header>
+          <div class="notification-list__content">
+            <button class="notification-list__button">Отключить аккаунт</button>
+            <div class="notification-list__option checkbox">
+              <input class="checkbox__field" id="telegram" name="telegram" type="checkbox" value="" />
+              <label class="checkbox__label" for="telegram"><span class="checkbox__text">Только служебные</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="notification-list__item">
+          <header class="notification-list__header notification-list__header--2 notification-list__header--active">
+            <h3 class="notification-list__title">ICQ</h3>
+          </header>
+          <div class="notification-list__content">
+            <ol class="notification-list__instructions">
+              <li class="notification-list__instruction">Скопируйте команду авторизации<button class="instructions__button"></button></li>
+              <li class="notification-list__instruction">Перейдите в&nbsp;чат и&nbsp;отправьте команду боту<button class="instructions__button"></button></li>
+            </ol>
+          </div>
+        </div>
+        <div class="notification-list__item">
+          <header class="notification-list__header notification-list__header--3 notification-list__header--active">
+            <h3 class="notification-list__title">Skype</h3>
+          </header>
+          <div class="notification-list__content">
+            <ol class="notification-list__instructions">
+              <li class="notification-list__instruction">Скопируйте команду авторизации<button class="instructions__button"></button></li>
+              <li class="notification-list__instruction">Перейдите в&nbsp;чат и&nbsp;отправьте команду боту<button class="instructions__button"></button></li>
+            </ol>
+          </div>
+        </div>
+        <div class="notification-list__item">
+          <header class="notification-list__header notification-list__header--4">
+            <h3 class="notification-list__title notification-list__title--point">Slack</h3>
+          </header>
+          <div class="notification-list__content">
+            <button class="notification-list__button">Отключить аккаунт</button>
+            <div class="notification-list__option checkbox">
+              <input class="checkbox__field" id="slack" name="slack" type="checkbox" value="" />
+              <label class="checkbox__label" for="slack"><span class="checkbox__text">Только служебные</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
